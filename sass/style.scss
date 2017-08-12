@@ -1,0 +1,38 @@
+body {
+	background: black;
+}
+
+.nav_text_size {
+	font-size: 20px;
+}
+
+.navbar.navbar-default .dropdown{
+	margin-left: 80px;
+}
+
+.navbar.navbar-default .dropdown .nav_text_size{
+	margin-left: 11px;
+}
+
+#name_sites {
+	padding-left: 55px;
+}
+
+#main {
+	background:black; 
+	height: 100vh;
+
+}
+
+#main0 {
+	background: url(../img/bg6.jpg) no-repeat; 
+	height: 500px;
+	p {
+	color: white;
+	}
+	.p_bottom {
+	position:absolute;
+	bottom: 384px;
+	}
+
+}

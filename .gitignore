@@ -1,0 +1,6 @@
+#folder sass
+node_modules/
+#html_hide
+index.html
+#img
+img/
