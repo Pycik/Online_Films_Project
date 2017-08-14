@@ -1,3 +1,5 @@
+$type: ocean,trees,fish;
+
 body {
 	background: black;
 }
@@ -21,11 +23,11 @@ body {
 #main {
 	background:black; 
 	height: 100vh;
+	margin-top: 20px;
 
 }
 
-#main0 {
-	background: url(../img/bg6.jpg) no-repeat; 
+#main0 {	
 	height: 500px;
 	p {
 	color: white;
@@ -33,6 +35,42 @@ body {
 	.p_bottom {
 	position:absolute;
 	bottom: 384px;
+	color: aqua;	
+	@extend .nav_text_size;	
+	}
+
+}
+@each $bg_main0 in #main0 {
+	#{$bg_main0} {
+	background-image:url(../img/#{bg6}.jpg);
+	}
+}
+
+
+.dropdown a i:hover{
+	@extend a:hover;
+}
+a:hover {
+	color: red;
+}
+
+.foot {
+	@import "example";
+}
+
+$type: ocean;
+p {	
+	@if $type == trees {
+	color: green;
+	}
+	@else if $type == ocean {
+	color: yellow;
+	}
+	@else if $type == fish {
+	color: aqua;
+	}
+	@else {
+	color: pink;
 	}
 
 }

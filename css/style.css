@@ -2,7 +2,7 @@ body {
   background: black;
 }
 
-.nav_text_size {
+.nav_text_size, #main0 .p_bottom {
   font-size: 20px;
 }
 
@@ -10,7 +10,7 @@ body {
   margin-left: 80px;
 }
 
-.navbar.navbar-default .dropdown .nav_text_size {
+.navbar.navbar-default .dropdown .nav_text_size, .navbar.navbar-default .dropdown #main0 .p_bottom, #main0 .navbar.navbar-default .dropdown .p_bottom {
   margin-left: 11px;
 }
 
@@ -21,10 +21,10 @@ body {
 #main {
   background: black;
   height: 100vh;
+  margin-top: 20px;
 }
 
 #main0 {
-  background: url(../img/bg6.jpg) no-repeat;
   height: 500px;
 }
 
@@ -35,4 +35,21 @@ body {
 #main0 .p_bottom {
   position: absolute;
   bottom: 384px;
+  color: aqua;
+}
+
+#main0 {
+  background-image: url(../img/bg6.jpg);
+}
+
+a:hover, .dropdown a i:hover {
+  color: red;
+}
+
+.foot .example {
+  color: yellow;
+}
+
+p {
+  color: yellow;
 }
