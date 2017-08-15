@@ -19,8 +19,8 @@ body {
 }
 
 #main {
+  z-index: -1;
   background: black;
-  height: 100vh;
   margin-top: 20px;
 }
 
@@ -52,4 +52,17 @@ a:hover, .dropdown a i:hover {
 
 p {
   color: yellow;
+}
+
+.col-md-2 img {
+  height: 260px;
+  weight: 120px;
+}
+
+.col-md-2 img:hover {
+  borfer: solid 3px #fff;
+  background: #fff;
+  z-index: -1;
+  height: 250px;
+  weight: 100px;
 }
