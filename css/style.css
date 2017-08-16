@@ -1,5 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: black;
+  background: url(../img/bg0.png);
 }
 
 .nav_text_size, #main0 .p_bottom {
@@ -20,7 +25,7 @@ body {
 
 #main {
   z-index: -1;
-  background: black;
+  background: url(../img/bg0.png);
   margin-top: 20px;
 }
 
@@ -65,4 +70,63 @@ p {
   z-index: -1;
   height: 250px;
   weight: 100px;
+}
+
+.Up_page {
+  position: absolute;
+  right: 0;
+  margin: 0 20px 20px 0;
+  background: #333;
+  border: none;
+  z-index: 100;
+}
+
+.down_page {
+  position: fixed;
+  left: 0;
+  margin: 30px 20px 20px 0;
+  background: #333;
+  border: none;
+  z-index: 1000;
+}
+
+.container.down {
+  width: 906px;
+  margin: 10px auto;
+  padding: 0;
+  box-shadow: 0 5px 30px fadeout(red, 70%);
+  -webkit-box-shadow: 0 5px 30px fadeout(red, 70%);
+  -moz-box-shadow: 0 5px 30px fadeout(red, 70%);
+}
+
+.thumb {
+  position: relative;
+  background: url(../img/bg0.png);
+  width: 300px;
+  height: 200px;
+  float: left;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.thumb .content {
+  text-transform: uppercase;
+  color: green;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 30px;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 200px;
+}
+
+.wrapper img {
+  width: 300px;
+  height: 200px;
 }

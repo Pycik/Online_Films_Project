@@ -109,3 +109,54 @@ $(".row_hide").click(function(){
 		hide_row = $(".row_kino4").hide();
 	}
 });
+
+$(document).ready(function(){
+	$(".down_page").click(function(e){
+		var linkHref = $(".para2para");
+		// console.log($(linkHref).offset().top);
+		$("html,body").animate({
+			scrollTop:$(linkHref).offset().top 
+		},3000);
+
+		$(".down_page").hide();		
+		// $(this) = false;		
+		
+	});	
+});
+
+
+$(document).ready(function(){
+	$(".Up_page").click(function(){
+		var linkHref = $(".bg");
+		// console.log($(linkHref).offset().top);
+		$("html,body").animate({
+			scrollTop:$(linkHref).offset().top 
+		},1000);
+		$(".down_page").show();	
+
+		// $(this) = null;
+	});
+});
+
+
+var hider_img = 0;
+$(document).ready(function(){	
+	while(hider_img  < 5) {
+	$(".col-md-2.sixtrty").click(function(){	
+		$(this).hide("slow").show("slow");
+	});
+		hider_img ++;
+	};
+});
+
+$(function(){
+	$(".wrapper img").replaceWith('<img src="https://placehold.it/300x200" alt="">');
+});
+
+$(function(){
+	$(".wrapper").hover(function(){
+		$(this).children().stop().animate({marginTop:'100%',opacity:0},600);
+	},function(){
+		$(this).children().stop().animate({marginTop:'0%',opacity:1},600);	
+	});
+});
