@@ -131,7 +131,7 @@ p {
 	float: left;
 	overflow: hidden;
 	border: 1px solid #eee;
-	.content {
+	.content {	
 	text-transform:uppercase;
 	color: green;
 	position: absolute;
@@ -147,10 +147,46 @@ p {
 	position: absolute;
 	top:0;left:0;
 	width:300px;
-	height:200px;	
+	height:200px;		
 	img {
 	width:300px;
 	height:200px;
 	}
+	
+}
+
+.container.second {
+	width:1000px;
+	margin:10px auto;	
+	padding: 0;
+	box-shadow:0 5px 30px fadeout(red,70%);
+	-webkit-box-shadow:0 5px 30px fadeout(red,70%);
+	-moz-box-shadow:0 5px 30px fadeout(red,70%);
+}
+
+.wrapik{
+	position: relative;
+	float: left;	
+	width: 200px;
+	height: 300px;
+	overflow: hidden;
+	margin: 15px;
+
+
+}
+
+
+.imager {
+	position: absolute;
+	img{
+	width:200px;
+	height:300px;
+	}
+}
+.contentik {
+	position: absolute;
+	width:200px;
+	height:300px;
+	background: #666;
 	
 }

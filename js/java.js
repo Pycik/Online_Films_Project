@@ -153,10 +153,22 @@ $(function(){
 	$(".wrapper img").replaceWith('<img src="https://placehold.it/300x200" alt="">');
 });
 
-$(function(){
+$(function(){	
 	$(".wrapper").hover(function(){
 		$(this).children().stop().animate({marginTop:'100%',opacity:0},600);
 	},function(){
 		$(this).children().stop().animate({marginTop:'0%',opacity:1},600);	
+	});
+});
+
+// $(function(){
+// 	$(".col-md-2").find("img").hide();
+// });
+
+$(function(){	
+	$(".imager").hover(function(){
+		$(this).children().stop().animate({marginLeft:'100%',opacity:0},1000);
+	},function(){
+		$(this).children().stop().animate({marginLeft:'0%',opacity:1},300);	
 	});
 });
