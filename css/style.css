@@ -5,6 +5,7 @@
 
 body {
   background: url(../img/bg0.png);
+  min-height: 400px;
 }
 
 .nav_text_size, #main0 .p_bottom {

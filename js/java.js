@@ -172,3 +172,15 @@ $(function(){
 		$(this).children().stop().animate({marginLeft:'0%',opacity:1},300);	
 	});
 });
+
+$(function(){
+	$(".rowik").clone().appendTo(".imager_2")
+
+});
+
+$(function(){
+	$(".imager_2").click(function(){
+		$(this).find(".imager").hide(500).show(3000)
+	});
+
+});
