@@ -201,3 +201,8 @@ $(function(){
 });
 
 
+$(function(){
+
+	$(".navbar-default").css({"background" : "silver"});
+
+});
