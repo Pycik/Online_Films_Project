@@ -184,3 +184,20 @@ $(function(){
 	});
 
 });
+
+
+$(function(){
+	$(".rowik").clone().appendTo(".imager_3")
+
+});
+
+
+$(function(){
+	$(".imager_3").hide().show(3000).click(function(){
+		$(this).hide(3000)
+	});
+	
+
+});
+
+
